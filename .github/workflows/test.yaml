@@ -25,8 +25,8 @@ jobs:
         runs-on: self-hosted
         name: Execute RPT Test
         steps:
-         - name: Execute Test
-           uses: SonaHJ/RPTAction@main
+         - name: RPT Action
+           uses: SonaHJ/RPTAction@RPT_Release
            with:
             imshared: '${{ github.event.inputs.imshared }}'
             workspace: '${{ github.event.inputs.workspace }}'
